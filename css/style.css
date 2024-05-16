@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Reddit Sans";
+}
+
+body {
+    background-color: rgb(0, 214, 214);
+}
+
+.container-1 {
+    border: 2px solid black;
+    border-radius: 20px;
+    margin: 200px auto 20px;
+    padding: 20px;
+    width: 500px;
+    overflow: auto;
+    box-shadow: 10px 15px teal;
+    background-color: white;
+}
+
+.container-2 {
+    border: 2px solid black;
+    border-radius: 20px;
+    margin: 20px auto;
+    padding: 20px;
+    width: 350px;
+    overflow: auto;
+    box-shadow: 10px 15px teal;
+    background-color: white;
+    display: block;
+}
+
+.container-3 {
+    border: 2px solid black;
+    border-radius: 20px;
+    margin: 20px auto;
+    padding: 20px;
+    width: 600px;
+    overflow: auto;
+    box-shadow: 10px 15px teal;
+    background-color: white;
+    display: none;
+}
+
+.container-4 {
+    border: 2px solid black;
+    border-radius: 20px;
+    margin: 20px auto;
+    padding: 20px;
+    width: 350px;
+    overflow: auto;
+    box-shadow: 10px 15px teal;
+    background-color: white;
+    display: none;
+}
+
+.container-5 {
+    border: 2px solid black;
+    border-radius: 20px;
+    margin: 20px auto;
+    padding: 20px;
+    width: 350px;
+    overflow: auto;
+    box-shadow: 10px 15px teal;
+    background-color: white;
+    display: none;
+}
+
+.container-6 {
+    border: 2px solid black;
+    border-radius: 20px;
+    margin: 20px auto;
+    padding: 20px;
+    width: 350px;
+    overflow: auto;
+    box-shadow: 10px 15px teal;
+    background-color: white;
+    display: block;
+    text-align: center;
+}
+
+h1 {
+    font-size: 42px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+p {
+    margin: 20px auto;
+    font-size: 20px;
+}
+
+p.p_centrado {
+    text-align: center;
+}
+
+.botones-lista {
+    white-space: pre-line;
+}
+
+.enlace {
+    text-align: center;
+    font-weight: 700;
+    display: block;
+    border-radius: 10px;
+    padding: 15px 30px;
+    margin: 0 auto;
+    width: 170px;
+    text-decoration: none;
+    color: white;
+    background: rgb(97,58,180);
+    background: linear-gradient(317deg, rgba(252,98,224,1) 22%, rgba(32,132,255,1) 100%);
+}
+
+.enlace_trabajos {
+    text-align: center;
+    font-weight: 700;
+    display: block;
+    border-radius: 10px;
+    padding: 15px 30px;
+    margin: 0 auto;
+    width: 220px;
+    text-decoration: none;
+    color: white;
+    background: rgb(97,58,180);
+    background: linear-gradient(317deg, rgba(252,98,224,1) 22%, rgba(32,132,255,1) 100%);
+}
+
+.sobre_mi {
+    text-align: justify;
+}
+
+span.span_bold {
+    font-weight: 700;
+}
+
+span.span_bold_cursiva {
+    font-weight: 700;
+    font-style: italic;
+}
+
+span.span_cursiva_pequeña {
+    font-style: italic;
+    font-size: 10px;
+    font-weight: 800;
+}
+
+span.span_salto_linea {
+    display: block;
+}
+
+.copyr_enlace {
+    text-decoration: none;
+    color: black
+}
+
+.copyr_enlace:hover {
+    color: rgb(97,58,180);
+}

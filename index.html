@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Sr.Croqueta">
+        <meta name="description" content="Página web personal de Sr.Croqueta.">
+        <title>Sr.Croqueta's website</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/showcontent.js"></script>
+        <script src="js/copyright_autoupdate.js"></script>
+    </head>
+    <body>
+        <div class="container-1">
+            <h1>Sr.Croqueta's website</h1>
+        </div>
+
+        <div class="container-2" id="container-2">
+            <h2>Puntos de interés:</h2>
+            <div class="botones-lista">
+                <a class="enlace" href="#" onclick="mostrarContenido('container-3')">Sobre mi</a>
+                <a class="enlace" href="#" onclick="mostrarContenido('container-4')">Mis trabajos</a>
+                <a class="enlace" href="#" onclick="mostrarContenido('container-5')">Redes Sociales</a>
+            </div>
+        </div>
+
+        <div class="container-3" id="container-3">
+            <h2>Sobre mi:</h2>
+            <article class="sobre_mi">
+                <p>
+                    ¡Hola!, bienvenido/a a mi humilde web. Me suelen llamar <span class="span_bold">Croqueta</span> o <span class="span_bold">Jota</span>, cumplo el 29
+                    de agosto y tengo 28 años <span class="span_cursiva_pequeña">(al menos en el momento que escribo esto, 16 de mayo de 2024).</span>
+                </p>
+                <p>
+                    He estudiado Sistemas Micro-Informáticos y Redes, aunque he seguido formándome en ello más adelante,
+                    no he tenido la suerte de poder acabar otros estudios superiores a estos. Aún así, no me quedé ahí,
+                    tengo varios cursos con certificaciones y diplomas... <span class="span_bold_cursiva">Virtualización en VMWare y Hyper-V, Cloud Computing,
+                    Informática forense</span>, varios certificados de <span class="span_bold_cursiva">CISCO</span>, los cuales aún a día de hoy sigo en ellos para obtener el
+                    certificado de <span class="span_bold_cursiva">Analista Junior en Cyberseguridad (Cisco Certified Support Technician (CCST) Cybersecurity).</span>
+                </p>
+                <p>
+                    También me encuentro aprendiendo un poco de desarrollo web del lado del cliente, <span class="span_bold_cursiva">HTML5, CSS, JavaScript</span>, etc.
+                </p>
+                <p class="p_centrado">
+                    <span class="span_cursiva_pequeña">Esta web de hecho es el primer intento público que hago completamente desde cero.</span><span class="span_salto_linea">&#128517;</span>
+                </p>
+            </article>
+            <a class="enlace" href="#" onclick="ocultarContenido('container-3')">Volver</a>
+        </div>
+
+        <div class="container-4" id="container-4">
+            <h2>Mis trabajos:</h2>
+            <div class="botones-lista">
+                <a class="enlace_trabajos" target="_blank" href="https://aceptalos.org/">Asociación Acéptalos</a>
+            </div>
+            <a class="enlace" href="#" onclick="ocultarContenido('container-4')">Volver</a>
+        </div>
+
+        <div class="container-5" id="container-5">
+            <h2>Enlaces:</h2>
+            <div class="botones-lista">
+                <a class="enlace" target="_blank" href="https://github.com/SrCroqueta">GitHub</a>
+                <a class="enlace" target="_blank" href="https://twitter.com/SrCroqueta_">Twitter / X</a>
+                <a class="enlace" target="_blank" href="https://twitch.tv/SrCroqueta_">Twitch</a>
+            </div>
+            <a class="enlace" href="#" onclick="ocultarContenido('container-5')">Volver</a>
+        </div>
+
+        <div class="container-6">
+            <footer id="copyr"></footer>
+        </div>
+    </body>
+</html>
