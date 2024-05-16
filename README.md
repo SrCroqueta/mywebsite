@@ -1,2 +1,2 @@
-# SrCroqueta's website
+# Sr.Croqueta's website
 Mi página web.
