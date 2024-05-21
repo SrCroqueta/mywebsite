@@ -1,5 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap');
 
+:root {
+    /* -- Paleta de colores y pequeñas modificaciones -- */
+    /* Fondo */
+    --colorBackground: rgb(0, 214, 214);
+    /* Borde containers */
+    --colorBorder: 2px solid black;
+    /* Fondo containers & texto enlaces */
+    --colorBGCont_Text: white;
+    /* Sombras containers */
+    --colorContainer: 10px 15px teal;
+    /* Enlaces & hoover */
+    --colorEnlaces: rgb(97,58,180);
+    /* Enlaces gradient */
+    --colorEnlacesGradient: linear-gradient(317deg, rgba(252,98,224,1) 22%, rgba(32,132,255,1) 100%);
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -8,79 +24,81 @@
 }
 
 body {
-    background-color: rgb(0, 214, 214);
+    background-color: var(--colorBackground);
+    margin: 0 10px; /* Dispositivos móviles */
 }
 
 .container-1 {
-    border: 2px solid black;
+    margin: 200px auto 20px; /* Margen superior por defecto */
+    border: var(--colorBorder);
     border-radius: 20px;
-    margin: 200px auto 20px;
     padding: 20px;
     width: 500px;
     overflow: auto;
-    box-shadow: 10px 15px teal;
-    background-color: white;
+    box-shadow: var(--colorContainer);
+    background-color: var(--colorBGCont_Text);
+}
+
+/* Pantallas pequeñas */
+@media (max-width: 600px) {
+    .container-1 {
+        margin: 10vh auto 20px;
+        width: 100%;
+    }
+}
+
+/* Pantallas medianas */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .container-1 {
+        margin: 15vh auto 20px;
+    }
+}
+
+/* Pantallas grandes */
+@media (min-width: 1025px) {
+    .container-1 {
+        margin: 20vh auto 20px;
+    }
+}
+
+.container-2, .container-3, .container-4, .container-5, .container-6 {
+    border: var(--colorBorder);
+    border-radius: 20px;
+    margin: 20px auto;
+    padding: 20px;
+    overflow: auto;
+    box-shadow: var(--colorContainer);
+    background-color: var(--colorBGCont_Text);
 }
 
 .container-2 {
-    border: 2px solid black;
-    border-radius: 20px;
-    margin: 20px auto;
-    padding: 20px;
     width: 350px;
-    overflow: auto;
-    box-shadow: 10px 15px teal;
-    background-color: white;
-    display: block;
 }
 
 .container-3 {
-    border: 2px solid black;
-    border-radius: 20px;
-    margin: 20px auto;
-    padding: 20px;
     width: 600px;
-    overflow: auto;
-    box-shadow: 10px 15px teal;
-    background-color: white;
     display: none;
 }
 
-.container-4 {
-    border: 2px solid black;
-    border-radius: 20px;
-    margin: 20px auto;
-    padding: 20px;
+.container-4, .container-5, .container-6 {
     width: 350px;
-    overflow: auto;
-    box-shadow: 10px 15px teal;
-    background-color: white;
-    display: none;
-}
-
-.container-5 {
-    border: 2px solid black;
-    border-radius: 20px;
-    margin: 20px auto;
-    padding: 20px;
-    width: 350px;
-    overflow: auto;
-    box-shadow: 10px 15px teal;
-    background-color: white;
     display: none;
 }
 
 .container-6 {
-    border: 2px solid black;
-    border-radius: 20px;
-    margin: 20px auto;
-    padding: 20px;
-    width: 350px;
-    overflow: auto;
-    box-shadow: 10px 15px teal;
-    background-color: white;
     display: block;
     text-align: center;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 600px) {
+    .container-2, .container-4, .container-5, .container-6 {
+        width: 100%;
+    }
+
+    .container-3 {
+        width: 100%;
+    }
 }
 
 h1 {
@@ -117,9 +135,9 @@ p.p_centrado {
     margin: 0 auto;
     width: 170px;
     text-decoration: none;
-    color: white;
-    background: rgb(97,58,180);
-    background: linear-gradient(317deg, rgba(252,98,224,1) 22%, rgba(32,132,255,1) 100%);
+    color: var(--colorBGCont_Text);
+    background: var(--colorEnlaces);
+    background: var(--colorEnlacesGradient);
 }
 
 .enlace_trabajos {
@@ -131,9 +149,9 @@ p.p_centrado {
     margin: 0 auto;
     width: 220px;
     text-decoration: none;
-    color: white;
-    background: rgb(97,58,180);
-    background: linear-gradient(317deg, rgba(252,98,224,1) 22%, rgba(32,132,255,1) 100%);
+    color: var(--colorBGCont_Text);
+    background: var(--colorEnlaces);
+    background: var(--colorEnlacesGradient);
 }
 
 .sobre_mi {
@@ -165,5 +183,5 @@ span.span_salto_linea {
 }
 
 .copyr_enlace:hover {
-    color: rgb(97,58,180);
+    color: var(--colorEnlaces);
 }
