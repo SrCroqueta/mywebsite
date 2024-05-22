@@ -5,11 +5,16 @@
     /* Fondo */
     --colorBackground: rgb(0, 214, 214);
     /* Borde containers */
-    --colorBorder: 2px solid black;
+    --border: 2px solid black;
+    /* Borde container img */
+    --borderIMG: 0.5px solid black;
+    /* Sombra container img */
+    --shadowContainerIMG: 0 1px 10px 2px rgb(123, 123, 123);
     /* Fondo containers & texto enlaces */
-    --colorBGCont_Text: white;
+    --colorBGContainer: white;
+    --colorText: white;
     /* Sombras containers */
-    --colorContainer: 10px 15px teal;
+    --shadowContainer: 10px 15px teal;
     /* Enlaces & hoover */
     --colorEnlaces: rgb(97,58,180);
     /* Enlaces gradient */
@@ -29,50 +34,50 @@ body {
 }
 
 .container-1 {
-    margin: 200px auto 20px; /* Margen superior por defecto */
-    border: var(--colorBorder);
+    margin: 20px auto 20px; /* Margen superior por defecto */
+    border: var(--border);
     border-radius: 20px;
     padding: 20px;
     width: 500px;
     overflow: auto;
-    box-shadow: var(--colorContainer);
-    background-color: var(--colorBGCont_Text);
+    box-shadow: var(--shadowContainer);
+    background-color: var(--colorBGContainer);
 }
 
 /* Pantallas pequeñas */
 @media (max-width: 600px) {
     .container-1 {
-        margin: 10vh auto 20px;
-        width: 100%;
+        margin: 5vh auto 20px;
+        width: 90%;
     }
 }
 
 /* Pantallas medianas */
 @media (min-width: 601px) and (max-width: 1024px) {
     .container-1 {
-        margin: 15vh auto 20px;
+        margin: 5vh auto 20px;
     }
 }
 
 /* Pantallas grandes */
 @media (min-width: 1025px) {
     .container-1 {
-        margin: 20vh auto 20px;
+        margin: 5vh auto 20px;
     }
 }
 
 .container-2, .container-3, .container-4, .container-5, .container-6 {
-    border: var(--colorBorder);
+    border: var(--border);
     border-radius: 20px;
     margin: 20px auto;
     padding: 20px;
     overflow: auto;
-    box-shadow: var(--colorContainer);
-    background-color: var(--colorBGCont_Text);
+    box-shadow: var(--shadowContainer);
+    background-color: var(--colorBGContainer);
 }
 
 .container-2 {
-    width: 350px;
+    width: 500px;
 }
 
 .container-3 {
@@ -81,8 +86,25 @@ body {
 }
 
 .container-4, .container-5, .container-6 {
-    width: 350px;
+    width: 500px;
     display: none;
+}
+
+.img-main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.img-container {
+    width: 250px;
+}
+
+img {
+    max-width: 100%;
+    box-shadow: var(--shadowContainerIMG);
+    border-radius: 20px;
 }
 
 .container-6 {
@@ -93,11 +115,11 @@ body {
 /* Ajustes para pantallas pequeñas */
 @media (max-width: 600px) {
     .container-2, .container-4, .container-5, .container-6 {
-        width: 100%;
+        width: 90%;
     }
 
     .container-3 {
-        width: 100%;
+        width: 90%;
     }
 }
 
@@ -135,7 +157,7 @@ p.p_centrado {
     margin: 0 auto;
     width: 170px;
     text-decoration: none;
-    color: var(--colorBGCont_Text);
+    color: var(--colorText);
     background: var(--colorEnlaces);
     background: var(--colorEnlacesGradient);
 }
@@ -149,7 +171,7 @@ p.p_centrado {
     margin: 0 auto;
     width: 220px;
     text-decoration: none;
-    color: var(--colorBGCont_Text);
+    color: var(--colorText);
     background: var(--colorEnlaces);
     background: var(--colorEnlacesGradient);
 }
@@ -185,3 +207,4 @@ span.span_salto_linea {
 .copyr_enlace:hover {
     color: var(--colorEnlaces);
 }
+
