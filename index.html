@@ -10,6 +10,7 @@
         <script src="js/showcontent.js"></script>
         <script src="js/copyright_autoupdate.js"></script>
         <script src="js/cookie-advice.js"></script>
+        <script src="js/modal-img.js" defer></script>
     </head>
     <body>
         <div class="container-1">
@@ -53,7 +54,7 @@
             <h2>Mis trabajos:</h2>
             <div class="img-main-container">
                 <figure class="img-container">
-                    <img class="img-trabajos" src="img/aceptalos.png" alt="Asociación Acéptalos">
+                    <img class="img-trabajos" src="img/aceptalos.png" alt="Asociación Acéptalos" onclick="openModal(this)">
                 </figure>
             </div>
 
@@ -86,5 +87,12 @@
                 <img class="cookies_img" src="img/cookie.png" alt="cookie">
             </div>
 		</div>
+
+        <!-- Modal para visualizar imágenes -->
+        <div id="imageModal" class="modal">
+            <span id="closeModal" class="close">&times;</span>
+            <img class="modal-content" id="modalImage">
+            <div id="caption"></div>
+        </div>
     </body>
 </html>
