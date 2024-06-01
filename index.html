@@ -11,6 +11,9 @@
         <script src="js/copyright_autoupdate.js"></script>
         <script src="js/cookie-advice.js"></script>
         <script src="js/modal-img.js" defer></script>
+        <!-- Los siguientes scripts son de prueba -->
+        <script src="js/send-form.js" defer></script>
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     </head>
     <body>
         <div class="container-1">
@@ -23,6 +26,7 @@
                 <a class="enlace" href="#" onclick="mostrarContenido('container-3')">Sobre mi</a>
                 <a class="enlace" href="#" onclick="mostrarContenido('container-4')">Mis trabajos</a>
                 <a class="enlace" href="#" onclick="mostrarContenido('container-5')">Redes Sociales</a>
+                <a class="enlace" href="#" onclick="mostrarContenido('container-6')">Contacto</a>
             </div>
         </div>
 
@@ -74,7 +78,39 @@
             <a class="enlace" href="#" onclick="ocultarContenido('container-5')">Volver</a>
         </div>
 
-        <div class="container-6">
+        <div class="container-6" id="container-6">
+            <h2>Contacto:</h2>
+            <div class="formulario-contacto">
+                <form action="https://fabform.io/f/I61QSU0" method="post" name="contacto" id="contacto">
+                    <table>
+                        <tr>
+                            <td><label for="nombre">Nombre:</label></td>
+                        </tr>
+                        <tr>
+                            <td><input class="input-formulario" type="text" name="nombre" id="nombre" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email">Email:</label></td>
+                        </tr>
+                        <tr>
+                            <td><input class="input-formulario" type="email" name="email" id="email" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="mensaje">Mensaje:</label></td>
+                        </tr>
+                        <tr>
+                            <td><textarea class="input-formulario" name="mensaje" id="mensaje" cols="20" rows="5" required></textarea></td>
+                        </tr>
+                    </table>
+                    <input type="hidden" name="_gotcha" style="display:none !important">
+                </form>
+            </div>
+            <div class="g-recaptcha" data-sitekey="6LdVee4pAAAAALNIVe6stuzWPE7Dl0FeGFtVlZ33" data-callback="correctCaptcha"></div>
+            <a class="boton-formulario" id="enviar-formulario" href="#">Enviar</a>
+            <a class="enlace" href="#" onclick="ocultarContenido('container-6')">Volver</a>
+        </div>
+
+        <div class="container-7">
             <footer id="copyr"></footer>
         </div>
 
