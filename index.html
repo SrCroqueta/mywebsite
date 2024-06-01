@@ -12,8 +12,8 @@
         <script src="js/cookie-advice.js"></script>
         <script src="js/modal-img.js" defer></script>
         <!-- Los siguientes scripts son de prueba -->
+        <!-- <script src="js/check_fields_form.js" defer></script> -->
         <script src="js/send-form.js" defer></script>
-	    <!-- Esta parte de Google es solo como PoC (Proof-of-Concept) -->
         <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     </head>
     <body>
@@ -83,7 +83,7 @@
             <h2>Contacto:</h2>
             <div class="formulario-contacto">
                 <form action="https://fabform.io/f/I61QSU0" method="post" name="contacto" id="contacto">
-                    <table>
+                    <table class="form-fields-contacto">
                         <tr>
                             <td><label for="nombre">Nombre:</label></td>
                         </tr>
@@ -100,14 +100,16 @@
                             <td><label for="mensaje">Mensaje:</label></td>
                         </tr>
                         <tr>
-                            <td><textarea class="input-formulario" name="mensaje" id="mensaje" cols="20" rows="5" required></textarea></td>
+                            <td><textarea class="input-formulario" name="mensaje" id="mensaje" required></textarea></td>
                         </tr>
                     </table>
                     <input type="hidden" name="_gotcha" style="display:none !important">
+                    <div class="g-recaptcha" data-sitekey="6LdVee4pAAAAALNIVe6stuzWPE7Dl0FeGFtVlZ33" data-callback="correctCaptcha"></div>
+                    <button class="boton-formulario" id="enviar-formulario">Enviar</button>
                 </form>
             </div>
-            <div class="g-recaptcha" data-sitekey="6LdVee4pAAAAALNIVe6stuzWPE7Dl0FeGFtVlZ33" data-callback="correctCaptcha"></div>
-            <button class="boton-formulario" id="enviar-formulario">Enviar</button>
+            <!-- <div class="g-recaptcha" data-sitekey="6LdVee4pAAAAALNIVe6stuzWPE7Dl0FeGFtVlZ33" data-callback="correctCaptcha"></div>
+            <button class="boton-formulario" id="enviar-formulario">Enviar</button> -->
             <a class="enlace" href="#" onclick="ocultarContenido('container-6')">Volver</a>
         </div>
 
