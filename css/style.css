@@ -221,6 +221,7 @@ p.p_centrado {
     font-weight: 700;
     font-size: 12px;
     display: block;
+    border: none;
     border-radius: 10px;
     padding: 10px 20px;
     margin: 10px auto 30px;
