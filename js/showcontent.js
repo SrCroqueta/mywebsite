@@ -10,7 +10,7 @@ function ocultarContenido(containerId) {
 }
 
 function ocultarTodos() {
-    var containers = document.querySelectorAll('.container-3, .container-4, .container-5');
+    var containers = document.querySelectorAll('.container-3, .container-4, .container-5, .container-6');
     containers.forEach(function(container) {
         container.style.display = "none";
     });
