@@ -216,6 +216,21 @@ p.p_centrado {
     margin: 20px auto;
 }
 
+.form-fields-contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px;
+}
+
+.input-formulario {
+    width: 320px;
+}
+
+textarea.input-formulario {
+    height: 150px;
+}
+
 .boton-formulario {
     text-align: center;
     font-weight: 700;
@@ -224,7 +239,7 @@ p.p_centrado {
     border: none;
     border-radius: 10px;
     padding: 10px 20px;
-    margin: 10px auto 30px;
+    margin: 10px auto 10px;
     width: 100px;
     text-decoration: none;
     color: var(--colorText);
@@ -236,10 +251,6 @@ p.p_centrado {
 .boton-formulario:hover {
     transition: var(--enlaceEfectoHover);
     transform: var(--enlaceEfectoHoverPosition);
-}
-
-.input-formulario {
-    width: 230px;
 }
 
 .g-recaptcha {
