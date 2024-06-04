@@ -84,6 +84,7 @@ body {
     textarea.input-formulario {
         width: 280px;
     }
+}
 
 /* Pantallas medianas */
 @media (min-width: 601px) and (max-width: 1024px) {
