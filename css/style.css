@@ -80,20 +80,12 @@ body {
         margin: 5vh auto 20px;
         width: 90%;
     }
-
-    textarea.input-formulario {
-        width: 280px;
-    }
 }
 
 /* Pantallas medianas */
 @media (min-width: 601px) and (max-width: 1024px) {
     .container-1 {
         margin: 5vh auto 20px;
-    }
-    
-    textarea.input-formulario {
-        width: 280px;
     }
 }
 
@@ -268,6 +260,12 @@ textarea.input-formulario {
     height: 150px;
     width: 320px;
     resize: none;
+}
+
+@media (max-width: 600px) {
+    textarea.input-formulario {
+        width: 280px;
+    }
 }
 
 .boton-formulario {
