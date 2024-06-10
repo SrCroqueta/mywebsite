@@ -7,6 +7,10 @@
     src: url(../fonts/Reddit_Sans/RedditSans-VariableFont_wght.ttf);
 }
 
+html {
+    font-size: 10px;
+}
+
 :root {
     /* -- Paleta de colores y pequeñas modificaciones -- */
     /* Fondo */
@@ -35,7 +39,7 @@
     --transicionOrigen: all .2s 0s ease;
     /* Efecto enlace copyright (hover) */
     --transicionHover: all .2s 0s ease;
-    --tamanioTextoHover: 18px;
+    --tamanioTextoHover: 1.2em;
     /* Sombra cookies */
     --shadowCookies: 0 1px 10px 2px rgb(123, 123, 123);
     --shadowCookiesIMG: 0 1px 10px 2px rgb(123, 123, 123);
@@ -154,11 +158,11 @@ body {
 }
 
 h1 {
-    font-size: 42px;
+    font-size: 4.2em;
 }
 
 h2 {
-    font-size: 28px;
+    font-size: 2.8em;
 }
 
 h1, h2 {
@@ -167,7 +171,7 @@ h1, h2 {
 
 p {
     margin: 20px auto;
-    font-size: 20px;
+    font-size: 2em;
 }
 
 p.p_centrado {
@@ -179,6 +183,7 @@ p.p_centrado {
 }
 
 .enlace {
+    font-size: 1.6em;
     text-align: center;
     font-weight: 700;
     display: block;
@@ -193,12 +198,8 @@ p.p_centrado {
     transition: var(--enlacesEfectoOrigen);
 }
 
-.enlace:hover {
-    transition: var(--enlaceEfectoHover);
-    transform: var(--enlaceEfectoHoverPosition);
-}
-
 .enlace_trabajos {
+    font-size: 1.6em;
     text-align: center;
     font-weight: 700;
     display: block;
@@ -211,11 +212,6 @@ p.p_centrado {
     background: var(--colorEnlaces);
     background: var(--colorEnlacesGradient);
     transition: var(--enlacesEfectoOrigen);
-}
-
-.enlace_trabajos:hover {
-    transition: var(--enlaceEfectoHover);
-    transform: var(--enlaceEfectoHoverPosition);
 }
 
 .formulario-contacto {
@@ -252,7 +248,7 @@ p.p_centrado {
     padding: 0 5px;
     background: white;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 1.2em;
     letter-spacing: 0.1em;
 }
 
@@ -271,7 +267,7 @@ textarea.input-formulario {
 .boton-formulario {
     text-align: center;
     font-weight: 700;
-    font-size: 12px;
+    font-size: 1.2em;
     display: block;
     border: none;
     border-radius: 10px;
@@ -283,11 +279,6 @@ textarea.input-formulario {
     background: var(--colorEnlaces);
     background: var(--colorEnlacesGradient);
     transition: var(--enlacesEfectoOrigen);
-}
-
-.boton-formulario:hover {
-    transition: var(--enlaceEfectoHover);
-    transform: var(--enlaceEfectoHoverPosition);
 }
 
 .g-recaptcha {
@@ -332,11 +323,15 @@ textarea.input-formulario {
         z-index: 1000;
         box-sizing: border-box;
     }
+
+    .sobre_mi {
+        text-align: center !important;
+    } 
 }
 
 .cookies_advice_text {
     text-transform:uppercase;
-    font-size: 12px;
+    font-size: 1.2em;
     text-align: center;
     margin: 0 auto;
 }
@@ -344,7 +339,7 @@ textarea.input-formulario {
 .enlace_cookies {
     text-align: center;
     font-weight: 600;
-    font-size: 11px;
+    font-size: 1.1em;
     display: block;
     border-radius: 10px;
     padding: 7px;
@@ -355,11 +350,6 @@ textarea.input-formulario {
     background: var(--colorEnlaces);
     background: var(--colorEnlacesGradient);
     transition: var(--enlacesEfectoOrigen);
-}
-
-.enlace_cookies:hover {
-    transition: var(--enlaceEfectoHover);
-    transform: var(--enlaceEfectoHoverPosition);
 }
 
 .cookies_img_main {
@@ -388,7 +378,7 @@ span.span_bold_cursiva {
 
 span.span_cursiva_pequeña {
     font-style: italic;
-    font-size: 10px;
+    font-size: 0.6em;
     font-weight: 800;
 }
 
@@ -396,10 +386,19 @@ span.span_salto_linea {
     display: block;
 }
 
+.copyr {
+    font-size: 1.6em;
+}
+
 .copyr_enlace {
     text-decoration: none;
     color: black;
     transition: var(--transicionOrigen);
+}
+
+.enlace:hover , .enlace_trabajos:hover , .boton-formulario:hover , .enlace_cookies:hover {
+    transition: var(--enlaceEfectoHover);
+    transform: var(--enlaceEfectoHoverPosition);
 }
 
 .copyr_enlace:hover {
@@ -460,7 +459,7 @@ span.span_salto_linea {
     top: 15px;
     right: 35px;
     color: #f1f1f1;
-    font-size: 40px;
+    font-size: 4em;
     font-weight: bold;
     transition: 0.3s;
 }
@@ -471,7 +470,7 @@ span.span_salto_linea {
     top: 15px;
     right: 35px;
     color: #fff;
-    font-size: 40px;
+    font-size: 4em;
     font-weight: bold;
     transition: 0.3s;
 }
