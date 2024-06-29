@@ -58,6 +58,10 @@ body {
     margin: 0 10px; /* Dispositivos móviles */
 }
 
+button, a {
+    cursor: pointer; /* Esto aplica el mismo estilo de cursor a botones y enlaces */
+}
+
 .fade {
     transition: opacity 0.5s ease-in-out;
     opacity: 0;
